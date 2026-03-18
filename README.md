@@ -53,3 +53,14 @@ scripts/
 - Pick region + date range; fix timezone.
 - Commit the data pull notebook/script.
 - Define train/val/test splits and extreme-weather thresholds in a shared config.
+
+
+## How to Run
+
+- Activate env: `source .venv/bin/activate`
+- Data (optional refresh): `python scripts/data_pull.py --force --refresh-weather`
+- Train TFT (example): `python scripts/train_tft.py --max_epochs 15`
+- Evaluate TFT: `python scripts/eval_tft.py --checkpoint reports/tft/lightning_logs/version_3/checkpoints/epoch=14-step=10170.ckpt --device cuda --batch_size 256 --num_workers 0`
+- Plots: `python scripts/report_plots.py`
+- Notebook: open `notebooks/notebook.ipynb` (Jupyter) for metrics/plots walkthrough.
+- Runbook: see `617-project-group-3.md` for full details.
