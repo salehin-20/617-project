@@ -1,0 +1,14 @@
+timezone: America/New_York
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+span:
+  start: 2019-01-01
+  end: null  # latest available
+splits:
+  train_end: 2023-12-31
+  val_end: 2024-12-31  # keep 2025+ for test
+quantiles: [0.1, 0.5, 0.9]
+extreme:
+  low_pct: 5
+  high_pct: 95

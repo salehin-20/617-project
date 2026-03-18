@@ -1,0 +1,29 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environments
+.env
+.venv/
+venv/
+
+# Data and outputs
+data/raw/
+data/processed/
+reports/
+outputs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and runs
+logs/
+mlruns/
+wandb/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
