@@ -1,4 +1,4 @@
-# 617 Project – Group 3 Runbook
+# 617 Project  Group 3 Runbook
 
 This file captures the steps, commands, and notes to reproduce our NYISO load + weather forecasting project (LSTM baseline and TFT). All paths are relative to the repo root.
 
@@ -98,7 +98,7 @@ cat reports/comparison.md
 - Cached weather speeds reruns; use `--refresh-weather` only when needed.
 
 ## File map (key ones)
-- `scripts/data_pull.py` – data download/merge/features
+- `scripts/data_pull.py` ï¿½ data download/merge/features
 - `scripts/train_lstm.py`, `scripts/eval_lstm.py`
 - `scripts/train_tft.py`, `scripts/eval_tft.py`
 - `scripts/report_plots.py`
